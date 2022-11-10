@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="leaf.ico" type="image/x-icon">
+    <title>Imagens adaptáveis/ Audio</title>
+</head>
+
+<body>
+    <h1>Imagens Adaptáveis / Dinâmicas</h1>
+    <p>Teste de adaptação de imagens enquanto visualizadas em dispositivos menores ou maiores, ou ainda, quando maior ou
+        menos o tamanho da página do navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Adicionando formato de áudio no meu site.</p>
+    
+    <audio preload="metadata" controls loop>
+        <source src="midia/music.mp3" type="audio/mpeg">
+        <source src="midia/music.ogg" type="audio/ogg">
+        <source src="midia/music.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não suporta a reprodução de áudios. <a href="midia/music.mp3">Clique aqui</a>para baixar o arquivo MP3.</p>
+    </audio>
+    <!--MP3 WAV OGG = Formatos de audio-->
+
+
+</body>
+
+</html>

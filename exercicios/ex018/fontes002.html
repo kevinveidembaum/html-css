@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: london;
+            src: url('font/Olondon_.otf') format('opentype'), url('fonts/OldLondon.ttf') format('truetype');
+            font-weight: normal;    
+            font-style: normal;
+
+            /* 
+            Tipos de format()
+            -opentype(otf)
+            -truetype(ttf)
+            -embedded-opentype
+            -truetype-aat (Apple Advanced Typography)
+            -svg
+            */
+        }
+        body {
+            background-color: cornflowerblue;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        h1 {
+            font-family: london;
+            font-size: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum nesciunt natus ullam nobis atque error amet esse quo incidunt vitae, maxime sit eveniet dolorum earum qui maiores totam. Debitis, tenetur.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum nobis illum reprehenderit, doloribus, animi sed quidem odit, pariatur fuga ipsa placeat. Porro perferendis facere sed assumenda, voluptatum delectus eius doloremque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nobis, sit, saepe ducimus, veritatis itaque labore cupiditate repudiandae voluptatum minima laudantium aut perferendis voluptatem dolor iusto doloremque delectus illo culpa!Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, quia vel nam natus est nobis distinctio, eaque incidunt officiis provident quisquam iste velit eius debitis blanditiis, quam quasi repudiandae. Sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, doloremque alias enim pariatur ex maiores laboriosam repudiandae fugit, autem distinctio veritatis iure exercitationem modi ratione. Incidunt nulla nemo nostrum non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum minus iusto quasi est. Harum fugiat amet exercitationem, est velit, eligendi cupiditate voluptate minus illum aliquam officia, repellat voluptates itaque assumenda!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus atque dolore error nobis reprehenderit cupiditate aliquam impedit numquam quos velit in, voluptate exercitationem esse voluptatum, nemo sint, qui consectetur <a href="fontes001.html">perferendis.</a></p>
+</body>
+</html>
