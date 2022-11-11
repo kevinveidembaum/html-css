@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+    <style>
+        
+        body {
+            background-image: url('imagens/wallpaper001.jpg');
+        }
+        
+        main {
+            height: 600px;
+        }
+
+        div.quadrado {
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            border-radius: 10px;
+            background-color: lightcyan; 
+            color: black;
+            font: bold 1.7em 'Courier New';
+            text-shadow: 2px 2px white;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        div#q1 {
+            background-color: skyblue;
+        }
+
+        div#q2{
+            background-image: url('imagens/pattern003.png');
+        }
+
+        div#q3{
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="quadrado" id="q1">
+            Click on me
+        </div>
+        <div class="quadrado" id="q2">
+            Enter
+        </div>
+        <div class="quadrado" id="q3">
+            Get out
+        </div>
+    </main>
+
+    <script>
+        let q1 = document.querySelector('div#q1')
+        let q2 = document.querySelector('div#q2')
+        let q3 = document.querySelector('div#q3')
+
+        q1.addEventListener('click', clicar)
+        q2.addEventListener('mouseenter', entrar)
+        q3.addEventListener('mouseout', sair)
+
+        function clicar() {
+            q1.innerText = 'You got me!'
+            q1.style.background = 'red' 
+        }
+
+        function entrar(){
+            q2.innerText = 'Welcome!'
+            q2.style.background = 'green'
+        }
+
+        function sair(){
+            q1.innerText = 'Click on me'
+            q1.style.background = 'skyblue'
+            q2.innerText = 'Enter'
+            q2.style.background = 'skyblue'
+            q3.innerText = 'Bye Bye'
+            q3.style.background = 'skyblue'
+        }
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
