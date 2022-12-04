@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        thead{
+            background-color: gray;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 15px;
+        }
+
+        .sex{
+            background-color: rgba(240, 57, 57, 0.452);
+        }
+
+        tbody tr:nth-child(odd){
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" class="sex" scope="rowgroup">Mulheres</th>
+                <td>Maria Clara</td>
+                <td>Rambo</td>
+                <td>Shrek</td>
+                <td>Alien</td>
+            </tr>
+            <tr>
+                <td>Beatriz Moura</td>
+                <td>A chegada</td>
+                <td>Corra!</td>
+                <td>Hobbit</td>
+            </tr>
+            <tr>
+                <td>Márcia da Silva</td>
+                <td>Memento</td>
+                <td>Queen & Slim</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <th rowspan="3" class="sex" scope="rowgroup">Homens</th>
+                <td>João Sauro</td>
+                <td>Stars Wars</td>
+                <td>Evangelion</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Romero II</td>
+                <td>Toy Story</td>
+                <td>Homem-Aranha</td>
+                <td>Frozen</td>
+            </tr>
+            <tr>
+                <td>Ricardo Vieira</td>
+                <td>Minions</td>
+                <td>Matrix</td>
+                <td>Múmia 2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

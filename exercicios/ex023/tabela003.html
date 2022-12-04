@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #cor1{
+            background-color: aqua;
+        }
+
+        #cor2{
+            background-color: cornflowerblue;
+        }
+
+        #cor3{
+            background-color: peru;
+        }
+
+        #cor4{
+            background-color: rgb(221, 51, 51);
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <table>
+        <tr id="cor1">
+            <td colspan="2">B</td>
+            <td rowspan="2">C</td>
+        </tr>
+        <tr id="cor2">
+            <td rowspan="3">D</td>
+            <td>E</td>
+        </tr>
+        <tr id="cor3">
+            <td colspan="2">H</td>
+        </tr>
+        <tr id="cor4">
+            <td colspan="2">K</td>
+        </tr>
+    </table>
+</body>
+</html>

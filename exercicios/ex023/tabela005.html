@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        col.cgrupo{
+            background-color: rgba(128, 0, 128, 0.438);
+        }
+
+        col.cnome, .cprof{
+            background-color: rgba(255, 255, 0, 0.521);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Tabela</h1>
+    <table>
+        <colgroup>
+        <col class="cnome">
+        <col class="cgrupo" span="2">
+        <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João Gomes</td>
+                <td>M</td>
+                <td>18</td>
+                <td>Cantor</td>
+            </tr>
+            <tr>
+                <td>Maria da Silva</td>
+                <td>F</td>
+                <td>65</td>
+                <td>Aposentada</td>
+            </tr>
+            <tr>
+                <td>Arnaldo Coelho</td>
+                <td>M</td>
+                <td>45</td>
+                <td>Narrador</td>
+            </tr>
+            <tr>
+                <td>Caetano Veloso</td>
+                <td>M</td>
+                <td>72</td>
+                <td>Cantor</td>
+            </tr>
+            <tr>
+                <td>Jeise Arruda</td>
+                <td>F</td>
+                <td>68</td>
+                <td>Atriz</td>
+            </tr>
+            <tr>
+                <td>Debora Seco</td>
+                <td>F</td>
+                <td>70</td>
+                <td>Atriz</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
